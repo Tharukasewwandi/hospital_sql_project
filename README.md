@@ -44,28 +44,51 @@ CREATE TABLE Patients (
 );
 
 ####visits tables
+
+
 CREATE TABLE Visits (
+
   visit_id INT AUTO_INCREMENT PRIMARY KEY,
+  
   patient_id INT,
+  
   visit_date DATE,
+  
   disease VARCHAR(100),
+  
   doctor VARCHAR(100),
+  
   bill_amount DECIMAL(10,2),
+  
   FOREIGN KEY (patient_id) REFERENCES Patients(patient_id)
 );
+
+
 ###Medicines table
+
 CREATE TABLE Medicines (
+
   med_id INT AUTO_INCREMENT PRIMARY KEY,
+  
   visit_id INT,
+  
   medicine_name VARCHAR(100),
+  
   qty INT,
+  
   FOREIGN KEY (visit_id) REFERENCES Visits(visit_id)
 );
 
+
+
 🧪 2. Dummy Data (Sample Records)
 5 patients
+
 6 visits
+
 Medicines for each visit
+
+
 All data included in:
 dummy_data.sql 
 
@@ -81,11 +104,17 @@ City-wise patient count
 Most used medicine
 All queries included in:
 analysis_queries.sql 
+
+
 📈 Sample Analysis Output (Expected)
 Total Patients → 5
+
 Most Common Disease → Fever / Allergy
+
 Highest Revenue Doctor → Dr. Nadee
+
 City With Most Patients → Colombo
+
 Most Used Medicine → Cetirizine / Panadol
 
 
