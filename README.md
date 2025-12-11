@@ -151,8 +151,8 @@ MySQL Workbench
 ✔ Recruiters can see your SQL knowledge easily
 
 
+
 ✨ Author
 Tharuka Sewwandi
-
 A passionate student learning Data Analysis and SQL.
 
