@@ -1,0 +1,22 @@
+INSERT INTO Patients (name, age, gender, city) VALUES
+('Amal Silva', 30, 'Male', 'Colombo'),
+('Nadee Perera', 25, 'Female', 'Kandy'),
+('Kasun Jayasiri', 44, 'Male', 'Galle'),
+('Tharuka Sewwandi', 19, 'Female', 'Kantale'),
+('Sithmi Lakmali', 21, 'Female', 'Colombo');
+
+INSERT INTO Visits (patient_id, visit_date, disease, doctor, bill_amount) VALUES
+(1, '2025-01-01', 'Fever', 'Dr. Sunil', 2500),
+(2, '2025-01-03', 'Diabetes', 'Dr. Kavindu', 5500),
+(3, '2025-01-04', 'Heart Issue', 'Dr. Nadee', 12000),
+(4, '2025-01-07', 'Fever', 'Dr. Sunil', 2300),
+(5, '2025-01-09', 'Allergy', 'Dr. Manoj', 1800),
+(1, '2025-01-15', 'Allergy', 'Dr. Manoj', 2000);
+
+INSERT INTO Medicines (visit_id, medicine_name, qty) VALUES
+(1, 'Panadol', 10),
+(2, 'Metformin', 20),
+(3, 'Aspirin', 30),
+(4, 'Panadol', 10),
+(5, 'Cetirizine', 15),
+(6, 'Cetirizine', 10);
